@@ -1,0 +1,299 @@
+body {
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    color: #707070;
+    line-height: 1.6;
+}
+
+/* -------- Typography -------- */
+
+h1, h2, h4, h5 {
+    margin: 0;
+    color: #143774;
+    
+    font-family: 'Lora', serif;
+    font-weight: lighter;
+    font-size: 2rem;
+}
+
+h1 {
+    text-align: center;
+    line-height: 1;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3,
+.subtitle,
+.con-reading,
+nav a {
+    margin:0;
+    color: #143774;
+    
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: .15em;
+} 
+
+h4 {
+    font-size: 1.2rem;
+    line-height: 1.4;
+}
+
+h5 {
+    font-size: 1rem;
+    color: #1792d2
+}
+
+a {
+    color: #1792d2;
+}
+a:hover,
+a:focus {
+    color:#143774;
+}
+
+.subtitle,
+.con-reading {
+    /* margin:0; */
+    color: #1792d2;
+    
+    font-size: .75rem;
+    text-align: center;
+}
+
+nav a {
+    color: #707070;
+    margin-left: 2em;
+    padding: .25em 0;
+    text-decoration: none;
+} 
+
+nav a:hover,
+nav a:focus {
+    border-bottom: solid 2px;
+    color: #143774;
+}
+
+
+.date-com {
+    font-size: 0.8em;
+}
+
+.con-reading {
+    text-decoration: none;
+}
+
+.con-reading:hover,
+.con-reading:focus {
+    border-bottom: solid .2em;
+    padding-bottom: .3em;
+}
+
+/* --------- Layout --------- */
+
+header {
+    background: #f8f8f8;
+    padding: 2em 0;
+}
+
+.container {
+    width: 95%;
+    max-width: 900px;
+    margin: 3em auto;
+}
+
+@media (min-width: 750px) { /* media */
+    .container {
+        display: flex;
+    }
+}
+
+.container-nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ------- Navigation ------- */
+
+nav ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.current-page {
+    border-bottom: solid 2px;
+}
+
+.current-page:hover,
+.current-page:focus {
+    color: #707070;
+}
+
+@media (max-width: 750px) { /* media */
+    .container-nav {
+        flex-direction: column;
+    }
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+    nav li {
+        padding: 1em;
+        margin: 0 auto;
+        
+    }
+    nav a{
+        margin: 0;
+    }
+}
+
+/* ---------- Main ---------- */
+
+.container img{
+    width: 100%;
+    object-fit: cover;
+    height: 15rem;
+}
+
+.main-image {
+    /* margin-top: 3em; */
+    height: 230px;
+    object-position: bottom;
+}
+
+.main-text {
+    padding-bottom: 1.6em;
+    border-bottom: solid #ebebeb; 
+}
+
+@media (min-width: 750px) { /* media */
+    .container {
+        justify-content: space-between;
+    }
+    
+    main {
+        max-width: 70%;
+    }
+    
+    aside {
+        width: 240px;
+        margin-left: 1em;
+    }
+    
+    .main-image {
+        height: 300px;
+    }
+}
+
+/* post template */
+.post {
+    margin: 3em 0;
+}
+
+.post .date-com {
+    text-align: right;
+}
+
+.post .text-box {
+    margin-top: -2em;
+}
+
+@media (min-width: 750px) { /* media */
+    .post {
+        display: flex;
+        margin: 2em 0 0 0;
+        height: 300px;
+    }
+
+    .post img {
+        height: 80%;
+        object-fit: cover;
+    }
+
+    .img-date {
+        width: 30%;
+    }
+    .post .date-com{
+        text-align: left;
+    }
+
+    .post .text-box {
+        max-width: 70%;
+        padding-left: 2em;
+        margin-top: 0em;
+    }
+        
+    .img-fix {
+        object-position: -30px;
+    }
+}
+
+/* ------ Side ber ------ */
+
+
+.side-container {
+    border: 1em solid #ebebeb;
+    padding: 1.5em;
+    margin-bottom: 4em;
+    /* width: 30%; */
+}
+
+.side-container img {
+    padding: 1em 0;
+}
+
+/* --- About Me --- */
+.about-me img {
+    height: 180px
+}
+
+.about-me p{
+    font-size: .9em;
+    margin: 0;
+    color: #143774;
+}
+
+/* --- Recent Posts --- */
+.rec-post-box {
+    margin-top: 1.5em;
+    border-top: solid #ebebeb;
+}
+
+.rec-post-box1 {
+    border: none;
+}
+
+.rec-post-box img{
+    height: 100px;
+}
+
+/* ---------- Footer ---------- */
+
+footer {
+    background: #143774;
+    text-align: center;
+    padding: 3em;
+    color: rgba(255,255,255, .65);
+}
+
+footer p {
+    /* opacity: .54; */
+    font-weight: 700;
+    margin: 0;
+}
+
+.copyright {
+    font-weight: 300;
+}
+
+/* ---------- About Me ---------- */
+
+.about-me-image {
+    margin-bottom: 2em;
+}
